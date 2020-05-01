@@ -1,6 +1,10 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
 import static org.junit.Assert.assertEquals;
 
 public class FlightTest {
@@ -8,12 +12,14 @@ public class FlightTest {
     private Flight flight1;
     private Passenger passenger1;
     private Plane plane1;
+    private SimpleDateFormat parser;
 
     @Before
     public void before(){
         plane1 = new Plane(PlaneType.BOEING747);
         flight1 = new Flight(plane1, "ED100", "Glasgow", "Edinburgh", "22:00");
         passenger1 = new Passenger("Mairi", 1);
+        parser = new SimpleDateFormat("EEE MMM d HH:mm:ss zzz yyyy");
     }
 
     @Test
@@ -54,6 +60,7 @@ public class FlightTest {
     @Test
     public void canBookAPassenger(){
         flight1.bookPassenger(passenger1);
+        System.out.println(flight1.getDepartureTime());
         assertEquals( 2, flight1.availableSeatCount() );
     }
 

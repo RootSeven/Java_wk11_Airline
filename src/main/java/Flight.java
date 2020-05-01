@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Flight {
 
@@ -51,6 +52,7 @@ public class Flight {
     public void bookPassenger(Passenger passenger) {
         if (this.availableSeatCount() > 0) {
             this.bookedPassengers.add(passenger);
+            passenger.setFlight(this);
         }
     }
 }
