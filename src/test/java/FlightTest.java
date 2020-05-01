@@ -63,7 +63,7 @@ public class FlightTest {
         flight1.bookPassenger(passenger1);
         flight1.bookPassenger(passenger1);
         flight1.bookPassenger(passenger1);
-        
+
         assertEquals( 0, flight1.availableSeatCount() );
     }
 
