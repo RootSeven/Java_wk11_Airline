@@ -60,12 +60,12 @@ public class FlightTest {
     @Test
     public void canBookAPassenger(){
         flight1.bookPassenger(passenger1);
-        System.out.println(flight1.getDepartureTime());
         assertEquals( 2, flight1.availableSeatCount() );
     }
 
     @Test
     public void cannotOverbookFlight(){
+        flight1.bookPassenger(passenger1);
         flight1.bookPassenger(passenger1);
         flight1.bookPassenger(passenger1);
         flight1.bookPassenger(passenger1);

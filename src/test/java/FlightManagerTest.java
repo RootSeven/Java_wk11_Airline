@@ -36,7 +36,7 @@ public class FlightManagerTest {
 
     @Test
     public void canGetRemainingBaggageWeight(){
-        assertEquals( 3, flightManager.remainingBaggageWeight(flight1) );
+        assertEquals( 0, flightManager.remainingBaggageWeight(flight1) );
     }
 
 }

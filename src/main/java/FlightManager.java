@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class FlightManager {
 
     public int baggagePerPassenger(Flight flight) {
@@ -13,6 +15,17 @@ public class FlightManager {
     }
 
     public int remainingBaggageWeight(Flight flight) {
-        return (flight.getPlane().getPlaneType().getTotalWeight()) - (this.totalBaggageWeight(flight));
+        return ((flight.getPlane().getPlaneType().getTotalWeight())/2) - (this.totalBaggageWeight(flight));
     }
+
+//    public int seatingArrangementBubbleSort(Flight flight){
+//        ArrayList<Passenger> flightPassengers = flight.getBookedPassengers();
+//
+//        // set pointerA at 1
+//        // set pointerB at 2
+//        // IF pointerA > pointerB
+//        // swap
+//        // move both on
+//    }
+
 }
