@@ -35,14 +35,29 @@ public class FlightManager {
 
     }
 
-//    public int seatingArrangementBubbleSort(Flight flight){
-//        ArrayList<Passenger> flightPassengers = flight.getBookedPassengers();
+//    public Passenger searchForPassengerBySeat(Flight flight, int passengerSeatNumber) {
+//        bubbleSortPassengerSeats(flight);
+//        ArrayList<Passenger> passengerList = flight.getBookedPassengers();
 //
-//        // set pointerA at 1
-//        // set pointerB at 2
-//        // IF pointerA > pointerB
-//        // swap
-//        // move both on
+//        int rightPointer = passengerList.size();
+//        int leftPointer = 0;
+//
+//        while (leftPointer <= rightPointer){
+//            int midpoint = (leftPointer + (rightPointer - leftPointer))/2;
+//
+//            if (passengerList.get(midpoint).getSeatNumber() == passengerSeatNumber){
+//                return passengerList.get(midpoint);
+//            }
+//
+//            if (passengerList.get(midpoint).getSeatNumber() > passengerSeatNumber){
+//                leftPointer = midpoint + 1;
+//            } else {
+//                leftPointer = midpoint - 1;
+//            }
+//        }
+//        Passenger noPassenger = new Passenger("NONE", -1);
+//        return noPassenger;
 //    }
+
 
 }

@@ -24,12 +24,12 @@ public class Passenger {
         return flight;
     }
 
-    public void setFlight(Flight flight) {
-        this.flight = flight;
-    }
-
     public int getSeatNumber() {
         return this.seatNumber;
+    }
+
+    public void setFlight(Flight flight) {
+        this.flight = flight;
     }
 
     public void setSeatNumber(int seatNumber) {

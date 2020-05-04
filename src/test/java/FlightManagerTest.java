@@ -53,4 +53,11 @@ public class FlightManagerTest {
         assertEquals( 3, flight1.getBookedPassengers().get(2).getSeatNumber() );
     }
 
+//    @Test
+//    public void canBinarySearchForPassenger(){
+//        int passengerSeatNumber = passenger1.getSeatNumber();
+//        Passenger foundPassenger = flightManager.searchForPassengerBySeat(flight1, passengerSeatNumber);
+//        assertEquals( passenger1, foundPassenger );
+//    }
+
 }
